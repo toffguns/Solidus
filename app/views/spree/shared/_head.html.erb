@@ -1,13 +1,40 @@
 <meta charset="utf-8">
-<title><%= title %></title>
+<title>Solidus</title>
 <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1" name="viewport">
-<%== meta_data_tags %>
+<%= stylesheet_link_tag 'spree/frontend/all', :media => 'screen' %>
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+<%= csrf_meta_tags %>
 <%= canonical_tag(current_store.url) %>
 <%= favicon_link_tag 'favicon.ico' %>
-<%= stylesheet_link_tag 'spree/frontend/all', :media => 'screen' %>
-<%= csrf_meta_tags %>
 <%= javascript_include_tag 'spree/frontend/all' %>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BIGBAG Store - Ecommerce Bootstrap Template</title>
+
+  <script
+  src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="/bigbag/plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+  <script src="/bigbag/plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+  <!-- GOOGLE FONT -->
+  <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+
+  <link href="/bigbag/plugins/jquery-ui/jquery-ui.css" rel="stylesheet">
+  <link href="/bigbag/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/bigbag/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="/bigbag/plugins/selectbox/select_option1.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/bigbag/plugins/rs-plugin/css/settings.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="/bigbag/plugins/owl-carousel/owl.carousel.css" media="screen">
+
+
+  <link href="/bigbag/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="/bigbag/css/colors/default.css" id="option_color">
+
+
+
 <!--[if lt IE 9]>
   <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6/html5shiv.min.js"></script>
 <![endif]-->

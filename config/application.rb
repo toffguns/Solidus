@@ -8,7 +8,7 @@ Bundler.require(*Rails.groups)
 
 module Solidus
   class Application < Rails::Application
-    
+
     config.to_prepare do
       # Load application's model / class decorators
       Dir.glob(File.join(File.dirname(__FILE__), "../app/**/*_decorator*.rb")) do |c|
@@ -34,6 +34,7 @@ module Solidus
     # config.i18n.default_locale = :de
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
+  
     config.active_record.raise_in_transactional_callbacks = true
   end
 end

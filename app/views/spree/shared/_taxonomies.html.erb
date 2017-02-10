@@ -2,8 +2,15 @@
 <nav id="taxonomies" class="sidebar-item" data-hook>
   <% @taxonomies.each do |taxonomy| %>
     <% cache [I18n.locale, taxonomy, max_level] do %>
-      <h6 class='taxonomy-root'><%= Spree.t(:shop_by_taxonomy, :taxonomy => taxonomy.name) %></h6>
-      <%= taxons_tree(taxonomy.root, @taxon, max_level) %>
+    <div class="panel panel-default">
+      <div class="panel-heading"><%= Spree.t(:shop_by_taxonomy, :taxonomy => taxonomy.name) %></div>
+      <div class="panel-body">
+        <div class="collapse navbar-collapse navbar-ex1-collapse navbar-side-collapse">
+          <ul class="nav navbar-nav side-nav">
+            <%= taxons_tree(taxonomy.root, @taxon, max_level) %>
+          </ul>
+        </div>
+      </div>
     <% end %>
   <% end %>
 </nav>
