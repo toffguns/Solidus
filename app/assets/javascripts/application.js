@@ -12,9 +12,7 @@
 //
 //
 
-//= require jquery
-//= require jquery_ujs
-//= twitter/bootstrap
+//= require twitter/bootstrap
 //= require turbolinks
 //= require jquery.themepunch.tools.min
 //= require jquery.themepunch.revolution.min
@@ -22,4 +20,8 @@
 //= require jquery.selectbox-0.1.3.min
 //= require jquery.syotimer
 //= require custom
-//= require_tree .
+
+
+
+
+// require_tree .

@@ -35,6 +35,7 @@
             <span class="price selling" itemprop="price"><%= display_price(product) %></span>
           </span>
         <% end %>
+
       </li>
     <% end %>
     <% reset_cycle("classes") %>
@@ -43,4 +44,6 @@
 
 <% if paginated_products.respond_to?(:total_pages) %>
   <%= paginate paginated_products %>
+
+  
 <% end %>
